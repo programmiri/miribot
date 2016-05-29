@@ -46,7 +46,14 @@ var gotFacts = [
   'http://i.imgur.com/y6BRCLW.jpg',
   'http://imgur.com/9NLnlB4',
   'http://imgur.com/b13cDww'
+];
 
+var gotFactsCourtesy = [
+  'You\'ve to say please!',
+  'I didn\'t hear a "please".',
+  'Say pretty please.',
+  'No bot could say no to a "please"...',
+  'Sorry, I didn\'t catch the "please".'
 ];
 
 module.exports = function(robot) {
@@ -58,7 +65,7 @@ module.exports = function(robot) {
     if (res.match[0].toLowerCase().indexOf('please') != -1) {
       res.send(res.random(gotFacts));
     } else {
-      res.send('You\'ve to say please!');
+      res.send(res.random(gotFactsCourtesy));
     }
   });
 };
