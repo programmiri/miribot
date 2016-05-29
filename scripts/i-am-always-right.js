@@ -8,13 +8,13 @@ var trigger = process.env.HUBOT_I_M_RIGHT_TRIGGER;
 // nice try... i wouldn't post my trigger here, would I now?
 
 var yourPraise = [
-  'You\'r right!',
-  'You\'r so smart!',
+  'You\'re right!',
+  'You\'re so smart!',
   'I totally agree!',
   'I totally agree!',
   'You\'re dead right!',
   'Wow. You totally got it!',
-  'Yey, you\'r spot on!',
+  'Yey, you\'re spot on!',
   'Exactly!',
   'Sounds about right. As always!',
   'Second!',
