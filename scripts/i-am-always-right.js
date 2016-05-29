@@ -5,7 +5,7 @@
 //   secret symbole - says you're right. And the best!
 
 var trigger = process.env.HUBOT_I_M_RIGHT_TRIGGER;
-// nice try... i wouldn't post my trigger here, would I know?
+// nice try... i wouldn't post my trigger here, would I now?
 
 var yourPraise = [
   'You\'r right!',
