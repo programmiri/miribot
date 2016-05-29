@@ -6,7 +6,7 @@
 //   Game of Thrones - gives a random Game of Thrones praise
 
 
-// The random GOT Praise!
+// random Game of Thrones praise
 var gotPraise = [
   'Game of Thrones is AWESOME',
   'Last Episode - mindblow, right?',
@@ -17,7 +17,7 @@ var gotPraise = [
 ];
 
 
-//The random GOT facts
+// random facts from Game of Thrones or A Song of Ice and Fire - advice: use spoilerfree facts!
 var gotFacts = [
   'A really (really!) tenacious theory is that Benjen Stark is Daario Naharis. Or Euron Greyjoy. Or both.',
   'There’s a theory about Tyrion being the Stallion that Mounts the World and time traveling fetus. Yep, really.',
