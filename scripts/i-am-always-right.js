@@ -19,7 +19,7 @@ var yourPraise = [
   'Sounds about right. As always!',
   'Second!',
   'OMG you know everything!',
-  'Is there something you\'ve ever be wrong about?!',
+  'Is there something you\'ve ever been wrong about?!',
   'Look how smart you are!'
 ];
 

@@ -7,7 +7,6 @@
 var shamingTheTeam = [
   ':bell: Shame! :bell: Shame! :bell: Shame! :bell:',
   'http://www.reactiongifs.com/r/lkay.gif',
-  'http://www.reactiongifs.com/r/shm2.gif',
   'http://www.reactiongifs.com/wp-content/uploads/2012/09/smh-kid.gif',
   'http://www.reactiongifs.com/r/whid.gif',
   'https://media.giphy.com/media/ugBTbHrwSmqI0/giphy.gif',
@@ -25,7 +24,7 @@ var shamingTheTeam = [
 
 module.exports = function(robot) {
   robot.hear(/Hall of Shame/i, function(res) {
-  res.send(res.random(shamingTheTeam));
+    res.send(res.random(shamingTheTeam));
   });
 };
 
