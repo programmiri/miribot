@@ -10,3 +10,9 @@ module.exports = function(robot) {
   });
 };
 
+
+module.exports = function(robot) {
+  robot.hear(/Reminder: quack quack/i, function(res) {
+    res.send('Quack Quack? Was besseres ist dir nicht eingefallen? Ich bin Ent-setzt!');
+  });
+};

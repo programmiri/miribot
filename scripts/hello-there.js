@@ -20,7 +20,7 @@ var hellosFromMiribot = [
 ];
 
 module.exports = function(robot) {
-  robot.hear(/miribot/i, function(res) {
+  robot.hear(/@miribot/, function(res) {
     res.send(res.random(hellosFromMiribot));
   });
 };
