@@ -58,7 +58,7 @@ var gotFactsCourtesy = [
 
 module.exports = function(robot) {
   robot.hear(/game of thrones/i, function(res) {
-  res.send(res.random(gotPraise));
+    res.send(res.random(gotPraise));
   });
 
   robot.respond(/.*got fact.*/i, function(res) {
