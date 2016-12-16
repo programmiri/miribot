@@ -1,10 +1,8 @@
 // Description:
-//   Miribot says "Hi"! And some slackbot burn
+//   Miribot says "Hi" when slackbot rants!
 //
 // Commands:
-//   Just mention "miribot"
-//   Or slackbot mentions miribot....
-
+//   Just wait until slackbot mentions miribot....
 
 // random hellos from miribot
 var hellosFromMiribot = [
@@ -21,7 +19,7 @@ var hellosFromMiribot = [
 ];
 
 module.exports = function(robot) {
-  robot.hear(/<@miribot>/, function(res) {
+  robot.hear(/freund miribot/i, function(res) {
     res.send(res.random(hellosFromMiribot));
   });
 };
