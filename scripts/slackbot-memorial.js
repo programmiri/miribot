@@ -7,13 +7,16 @@
 var slackbotResponses = [
   'Rewe Rewe Rewe Rewe!!!!',
   'You can\'t kill me!',
-  'Nice try Jan, nice try!'
+  'Nice try, nice try!',
+  'RIP slackbot...',
+  'We\'ll never forget you, slackbot!',
+  'Killing bots, aren\'t you?! Come at me bro!'
 ];
 
 
 module.exports = function(robot) {
   return robot.listen(function(message) {
-    return message.user.name == 'maxleistner';
+    return message.user.name == 'jan';
   }, function(res) {
     return res.reply(res.random(slackbotResponses));
   });
