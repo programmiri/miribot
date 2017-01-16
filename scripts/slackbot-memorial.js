@@ -20,9 +20,8 @@ var slackbotResponses = [
 
 module.exports = function(robot) {
   return robot.listen(function(message) {
-    return message.user.name == 'mirjam.b' && message.room == 'testing-miribot';
+    return message.user.name == 'jan' && message.room == 'mittagessen';
   }, function(res) {
-    return res.reply('yeah');
-    //return res.reply(res.random(slackbotResponses));
+    return res.reply(res.random(slackbotResponses));
   });
 };
