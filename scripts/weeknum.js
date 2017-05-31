@@ -7,7 +7,7 @@
 var moment = require('moment');
 
 module.exports = function(robot) {
-  robot.respond(/miribot weeknum/i, function(res) {
+  robot.respond(/weeknum/i, function(res) {
     res.reply('Current weeknumber: ' + moment().isoWeek());
   });
 };
