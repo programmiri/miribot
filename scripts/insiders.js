@@ -5,16 +5,15 @@
 //   Just a few random triggers
 
 const randomTriggerAnswer = [
-  'http://i3.kym-cdn.com/photos/images/original/000/882/132/346.jpg',
-  'http://i1.kym-cdn.com/photos/images/newsfeed/000/933/165/048.png',
-  'https://blueollie.files.wordpress.com/2014/12/triggered.jpg',
-  'https://pbs.twimg.com/profile_images/757591075640999936/O1V6BFvj.jpg',
-  'http://www.mememaker.net/static/images/memes/4536155.jpg'
+  'https://i.imgflip.com/x9dke.jpg',
+  'https://img.memesuper.com/ca334019156d8394cd0f0cbddcfe8198_evil-plotting-raccoon-meme-im-back-meme_600-391.jpeg',
+  'http://m.memegen.com/f6kk6v.jpg'
 ];
 
 module.exports = function(robot) {
-  robot.hear(/trigger/i, function(res) {
+  robot.hear(/welcome back miribot/i, function(res) {
     res.send(res.random(randomTriggerAnswer));
   });
 };
 
+/*

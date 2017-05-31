@@ -1,8 +1,8 @@
 // Description:
-//   Miribot says "Hi" when slackbot rants!
+//   Miribot says "Hi" like a good bot!
 //
 // Commands:
-//   Just wait until slackbot mentions miribot....
+//   Just wait until someone says hello to miribot
 
 // random hellos from miribot
 var hellosFromMiribot = [
@@ -15,11 +15,12 @@ var hellosFromMiribot = [
   'http://vampirediaries.com/files/2013/11/hello-there-gentle-viewers.gif',
   'That\'s me! :D',
   'https://cdn.meme.am/instances/37564810.jpg',
-  'http://hydra-media.cursecdn.com/sto.gamepedia.com/a/a3/User_Zutty_Hello.png'
+  'http://hydra-media.cursecdn.com/sto.gamepedia.com/a/a3/User_Zutty_Hello.png',
+  'huhu :blush:'
 ];
 
 module.exports = function(robot) {
-  robot.hear(/freund miribot/i, function(res) {
+  robot.hear(/hallo miribot|hello miribot|hey miribot|hi miribot/i, function(res) {
     res.send(res.random(hellosFromMiribot));
   });
 };

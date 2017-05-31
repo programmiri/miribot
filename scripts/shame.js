@@ -2,7 +2,7 @@
 //   Shames your team.
 //
 // Commands:
-//   Hall of Shame
+//   just write "shame on you"
 
 var shamingTheTeam = [
   ':bell: Shame! :bell: Shame! :bell: Shame! :bell:',
@@ -23,7 +23,7 @@ var shamingTheTeam = [
 ];
 
 module.exports = function(robot) {
-  robot.hear(/Hall of Shame/i, function(res) {
+  robot.hear(/shame on you/i, function(res) {
     res.send(res.random(shamingTheTeam));
   });
 };

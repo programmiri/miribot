@@ -2,3 +2,5 @@ node_modules
 .DS_Store*
 .hubot_history
 start-with-env-variables.md
+scripts/parking-new.js
+lib/ical-parking-check-new.js

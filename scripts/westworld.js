@@ -6,8 +6,8 @@
 
 
 module.exports = function(robot) {
-  robot.hear(/Foto/i, function(res) {
-    res.send('Photo? Doesn\'t look like anything to me.');
+  robot.hear(/Bild/i, function(res) {
+    res.send('Doesn\'t look like anything to me.');
   });
 
   robot.hear(/Roboter/i, function(res) {
