@@ -6,7 +6,7 @@
 
 
 module.exports = function(robot) {
-  robot.hear(/Bild/i, function(res) {
+  robot.hear(/Beweis/i, function(res) {
     res.send('Doesn\'t look like anything to me.');
   });
 
