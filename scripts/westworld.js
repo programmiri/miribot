@@ -6,27 +6,31 @@
 
 
 module.exports = function(robot) {
-  robot.hear(/Beweis/i, function(res) {
+  robot.hear(/\bBeweis\b/i, function(res) {
     res.send('Doesn\'t look like anything to me.');
   });
 
-  robot.hear(/Roboter/i, function(res) {
+  robot.hear(/\bProof\b/i, function(res) {
     res.send('Doesn\'t look like anything to me.');
   });
 
-  robot.hear(/host/i, function(res) {
+  robot.hear(/\bRoboter\b/i, function(res) {
+    res.send('Doesn\'t look like anything to me.');
+  });
+
+  robot.hear(/\bhost\b/i, function(res) {
     res.send('I don\'t know what you\'re talking about.');
   });
 
-  robot.hear(/Tür/i, function(res) {
+  robot.hear(/\bTür\b/i, function(res) {
     res.send('What door?');
   });
 
-  robot.hear(/Westworld/i, function(res) {
+  robot.hear(/\bWestworld\b/i, function(res) {
     res.send('These violent delights have violent ends...');
   });
 
-  robot.hear(/gefunden/i, function(res) {
+  robot.hear(/\bgefunden\b/i, function(res) {
     res.send('Did you find the center of the maze?!?');
   });
 };
